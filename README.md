@@ -1,9 +1,9 @@
 # PassMan
-Password Manager
+It is a Password Manager works completely offline with main focus on design which is simple, elegant and easy to use.
 
 <h2>
   <br>
-  <a href="https://github.com/BurningTiles"><img src="home.png"></a>
+  <a href=""><img src="home.jpg"></a>
   <br>
   Home
   <br>
@@ -11,7 +11,7 @@ Password Manager
 
 <h2>
   <br>
-  <a href="https://github.com/BurningTiles"><img src="detail.png"></a>
+  <a href=""><img src="detail.jpg"></a>
   <br>
   Detail
   <br>
@@ -19,7 +19,7 @@ Password Manager
 
 <h2>
   <br>
-  <a href="https://github.com/BurningTiles"><img src="settings.png"></a>
+  <a href=""><img src="settings.jpg"></a>
   <br>
   Settings
   <br>
