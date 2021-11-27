@@ -5,6 +5,8 @@ It is a Password Manager works completely offline with main focus on design whic
 # [Download Apk](https://github.com/BurningTiles/PassMan/releases/download/2.0/app-arm64-v8a-release.apk)
 # [Other Releases](https://github.com/BurningTiles/PassMan/releases/tag/2.0)
 
+<br>
+<br>
 <img src="home.jpg" width="250px" /><img src="detail.jpg" width="250px"/><img src="settings.jpg" width="250px"/>
 
 ---
