@@ -4,15 +4,21 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<script src='script.js'></script>
 </head>
 <body>
 	<input type="file" onchange="loadFile(this.files[0])">
 	<br>
 	<br>
-	{
-		"pass":[<pre id="pass"></pre>
-		],<pre id="other"></pre>
-	}
+	<div id="download_div" hidden>
+		Download json file : <button id="download" onclick="download()">Download</button><br><br>
+		Copy data : <button id="copy" onclick="copy()">Copy</button>
+	</div>
+	<br>
+	<br>
+	<pre id="data"></pre>
+	<br>
+	<br>
 </body>
 </html>

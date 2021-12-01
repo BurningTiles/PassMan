@@ -1,4 +1,7 @@
+var jsonData = ""
+
 async function loadFile(file) {
+	document.getElementById("download_div").hidden = true;
 	let pass = [];
 	let other = {};
 	let text = await file.text();
@@ -29,18 +32,47 @@ async function loadFile(file) {
 	}
 	console.log(pass);
 	console.log(other);
-	let jsonData = "";
+	jsonData = "{\n\t\"pass\":[\n\t\t";
 	for(i in pass){
-		jsonData += JSON.stringify(pass[i]) + ",\n"
+		jsonData += JSON.stringify(pass[i]) + ",\n\t\t";
 	}
-	document.getElementById("pass").innerHTML = jsonData.substr(0, jsonData.length-2);
-
-	jsonData = "";
+	jsonData = jsonData.substr(0, jsonData.length-4);
+	jsonData += "\n\t],\n\t";
 	for(key in other){
-		tmp = "\"" + key + "\":" + JSON.stringify(other[key]) + ",\n";
+		tmp = "\"" + key + "\":" + JSON.stringify(other[key]) + ",\n\t";
 		jsonData += tmp;
 	}
-	document.getElementById("other").innerHTML = jsonData.substr(0, jsonData.length-2);
+	jsonData = jsonData.substr(0, jsonData.length-3);
+	jsonData += "\n}";
+	document.getElementById("data").innerHTML = jsonData;
+	document.getElementById("download_div").hidden = false;
 }
 
-// Math.random().toString(16).substr(2, 12)
+function message(msg){
+	Swal.fire({
+		position: 'top-end',
+		icon: 'success',
+		title: msg,
+		showConfirmButton: false,
+		timer: 2000
+	});
+}
+
+function download(){
+	var jsonFile;  
+	var downloadLink;   
+	jsonFile = new Blob([jsonData], {type: 'text/json'});  
+	downloadLink = document.createElement("a");  
+	downloadLink.download = "passwords.json";  
+	downloadLink.href = window.URL.createObjectURL(jsonFile);  
+	downloadLink.style.display = "none";  
+	document.body.appendChild(downloadLink);
+	downloadLink.click();
+	message('Downloading');
+}
+
+function copy(){
+	navigator.clipboard.writeText(jsonData);
+	message('Copied');
+}
+
