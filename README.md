@@ -7,8 +7,8 @@ It is a Password Manager works completely offline with main focus on design whic
 - Fixed Dark Mode issue in some device
 - Fixed URL open issue
 
-# [Download Apk](https://github.com/BurningTiles/PassMan/releases/download/2.0/app-arm64-v8a-release.apk)
-# [Other Releases](https://github.com/BurningTiles/PassMan/releases/tag/2.0)
+# [Download Apk](https://github.com/BurningTiles/PassMan/releases/download/0.0.2/app-arm64-v8a-release.apk)
+# [Other Releases](https://github.com/BurningTiles/PassMan/releases/tag/0.0.2)
 
 ### [CSV to JSON](csv_to_json)
 - To convert chrome passwords into json.
@@ -26,9 +26,8 @@ It is a Password Manager works completely offline with main focus on design whic
 - Twice Fingerprint Authentication fix
 - Import Data error fixed
 - Merge Data null error fixed
-
-# [Download Apk](https://github.com/BurningTiles/PassMan/releases/download/2.0/app-arm64-v8a-release.apk)
-# [Other Releases](https://github.com/BurningTiles/PassMan/releases/tag/2.0)
+### [Download Apk](https://github.com/BurningTiles/PassMan/releases/download/2.0/app-arm64-v8a-release.apk)
+### [Other Releases](https://github.com/BurningTiles/PassMan/releases/tag/2.0)
 
 <br>
 <br>
